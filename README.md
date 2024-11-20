@@ -51,21 +51,6 @@ The application visually represents desk availability, preventing double booking
 
 ---
 
-## Setup Instructions
-
-1. Clone the repository or download the source files.
-   ```bash
-   git clone https://github.com/your-repo/co-working-space-booking-system.git
-   cd co-working-space-booking-system
-   ```
-
-2. Open the project directory and locate the `index.html` file.
-
-3. Open `index.html` in your browser (e.g., by double-clicking the file).
-
----
-
-## Usage Instructions
 
 1. **Viewing Desk Availability**:
    - Desks are visually represented. Available desks are clickable, and booked desks are marked in red.
