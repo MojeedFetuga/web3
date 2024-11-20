@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-Working Space Booking</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+        <h1>Co-Working Space Booking System</h1>
+        <img src="favicon.png" alt="booking">
+    </div>
+    <div class="desks">
+      <h2>Available Desks</h2>
+      <div id="desk-container" class="desk-container">
+        <!-- Desks will be dynamically generated here -->
+      </div>
+    </div>
+
+    <div class="booking-form">
+      <h2>Book a Desk</h2>
+      <form id="booking-form">
+        <label for="desk">Select Desk:</label>
+        <select id="desk" required>
+          <!-- Options will be dynamically generated -->
+        </select>
+
+        <label for="hours">Number of Hours:</label>
+        <input type="number" id="hours" min="1" required>
+
+        <label for="membership">Membership Type:</label>
+        <select id="membership" required>
+          <option value="basic">Basic ($10/hour)</option>
+          <option value="premium">Premium ($15/hour)</option>
+          <option value="executive">Executive ($20/hour)</option>
+          <option value="team">Team ($25/hour)</option>
+        </select>
+
+        <button type="submit">Book Desk</button>
+      </form>
+      <p id="total-charge"></p>
+    </div>
+
+    <div class="dashboard">
+      <h2>Revenue Dashboard</h2>
+      <p><strong>Total Revenue:</strong> $<span id="total-revenue">0</span></p>
+      <ul>
+        <li><strong>Basic:</strong> $<span id="basic-revenue">0</span></li>
+        <li><strong>Premium:</strong> $<span id="premium-revenue">0</span></li>
+        <li><strong>Executive:</strong> $<span id="executive-revenue">0</span></li>
+        <li><strong>Team:</strong> $<span id="team-revenue">0</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

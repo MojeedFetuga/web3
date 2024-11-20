@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .desks, .booking-form, .dashboard {
+    margin: 20px 0;
+  }
+  
+  .desk-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  .desk {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .desk.booked {
+    background-color: #f88;
+    cursor: not-allowed;
+  }
+  
+  .booking-form, .dashboard {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+img{
+  width: 100px;
+}  
